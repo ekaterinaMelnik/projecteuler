@@ -5,9 +5,9 @@
 
 //Find the largest palindrome made from the product of two 3-digit numbers.
 
-let palindrome = getMaxPalindrome(100, 1000);
+let result = getMaxPalindrome(100, 1000);
 
-console.log(palindrome);
+console.log(result);
 
 function getMaxPalindrome(start, end) {
   let maxPalindrome = 0;
