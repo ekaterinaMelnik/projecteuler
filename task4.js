@@ -12,8 +12,8 @@ console.log(palindrome);
 function getMaxPalindrome(start, end) {
   let maxPalindrome = 0;
 
-  for (let i = start; i < end; i++) {
-    for (let j = start; j < end; j++) {
+  for (let i = end; i >= start; i--) {
+    for (let j = i; j >= start; j--) {
       if (isPalindrome(i * j) && i * j > maxPalindrome) {
         maxPalindrome = i * j;
       }
